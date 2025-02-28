@@ -29,9 +29,3 @@ def plot_3d_scatter(df):
     fig = px.scatter_3d(df, x='sepal length (cm)', y = 'sepal width (cm)', z = 'petal length (cm)', color = df['Cluster'].astype(str), title = "K-Means clustering (3d view)")
     fig.write_html("static/plot_3d.html")
 
-df, sample = kmeans_clustering()
-df.head()
-
-plot_2d_scatter(df)
-plot_3d_scatter(df)
-
