@@ -8,7 +8,7 @@ def home():
     df, target_names = kmeans_clustering()
     plot_2d_scatter(df)
     plot_3d_scatter(df)
-    return render_temple("index.html")
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
